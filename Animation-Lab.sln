@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation-Lab", "Animation-Lab.csproj", "{6DBD546C-0472-A64A-C098-176ACFF0D76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation-Lab.Plugins", "Animation-Lab.Plugins.csproj", "{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation-Lab.Editor.Plugins", "Animation-Lab.Editor.Plugins.csproj", "{5D6E9F4C-B774-B543-3925-AD4F28033127}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DBD546C-0472-A64A-C098-176ACFF0D76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBD546C-0472-A64A-C098-176ACFF0D76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBD546C-0472-A64A-C098-176ACFF0D76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBD546C-0472-A64A-C098-176ACFF0D76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6E9F4C-B774-B543-3925-AD4F28033127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6E9F4C-B774-B543-3925-AD4F28033127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6E9F4C-B774-B543-3925-AD4F28033127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6E9F4C-B774-B543-3925-AD4F28033127}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
