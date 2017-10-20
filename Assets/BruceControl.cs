@@ -80,13 +80,13 @@ public class BruceControl : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                anim.SetBool("Crouch", true);
+                anim.SetBool("Kick", true);
 
             }
 
             else if(Input.GetKeyUp(KeyCode.LeftShift))
             {
-                anim.SetBool("Crouch", false);
+                anim.SetBool("Kick", false);
             }
 
 

@@ -86,8 +86,6 @@
   <ItemGroup>
     <Compile Include="Assets\BruceControl.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Code\CameraController.cs" />
-    <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterControllerFREE.cs" />
-    <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterGUI.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\ImageEffectBase.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\ImageEffects.cs" />
@@ -98,8 +96,10 @@
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
     <Compile Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\SetupLocalPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AnimationsKickReadMe.txt" />
     <None Include="Assets\BodyGuards\ReadMe.txt.txt" />
     <None Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
@@ -167,6 +167,7 @@
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
