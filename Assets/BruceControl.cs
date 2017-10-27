@@ -2,44 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BruceControl : MonoBehaviour {
+public class BruceControl : MonoBehaviour
+{
 
 
-        Animator anim;
+    Animator anim;
 
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    public float runleft = 0.0f, runright = 1.0f;
+    public float runleft = 0.0f, runright = 1.0f, timeInAir = 0f, deathTimer = 10f;
     private Vector3 moveDirection = Vector3.zero;
 
-    
+
 
     void Start()
-        {
-            anim = GetComponent<Animator>();
+    {
+        anim = GetComponent<Animator>();
 
 
 
     }
 
 
-        void Update()
-        {
+    void Update()
+    {
         CharacterController controller = GetComponent<CharacterController>();
+
+
         if (controller.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-            
-              
-            
+
             moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;            
-            if (Input.GetKeyDown("up")|| Input.GetKeyDown("w"))
+            moveDirection *= speed;
+
+
+            if (Input.GetKeyDown("up") || Input.GetKeyDown("w"))
             {
-                anim.SetBool("Running",true);
-             
+                anim.SetBool("Running", true);
+
             }
 
             if (Input.GetKeyUp("up") || Input.GetKeyUp("w"))
@@ -58,12 +61,12 @@ public class BruceControl : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                anim.SetFloat("Blend",runright);
+                anim.SetFloat("Blend", runright);
             }
 
             else if ((Input.GetKeyUp(KeyCode.D)))
             {
-                anim.SetFloat("Blend",0.5f);
+                anim.SetFloat("Blend", 0.5f);
             }
 
 
@@ -84,16 +87,41 @@ public class BruceControl : MonoBehaviour {
 
             }
 
-            else if(Input.GetKeyUp(KeyCode.LeftShift))
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 anim.SetBool("Kick", false);
             }
 
 
-        }
 
+        }
+        //rotating here
+        transform.right = Vector3.Slerp(transform.right, Vector3.right * Input.GetAxis("Horizontal"), 0.1f);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+
+
     }
+
+
+    void DeathCondition()
+    {
+        CharacterController controller = GetComponent<CharacterController>();
+        if (controller.isGrounded)
+        {
+            timeInAir = 0f;
+        }
+        if (!controller.isGrounded)
+        {
+            timeInAir += Time.deltaTime;
+
+        }
+        if (timeInAir >= deathTimer)
+        {
+           
+
+
+        }
     }
+}
 
