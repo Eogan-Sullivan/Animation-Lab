@@ -2494,6 +2494,9 @@ MonoBehaviour:
   runright: 1
   timeInAir: 0
   deathTimer: 10
+  bulletsprefab: {fileID: 1651967342823236, guid: d93405f7b3875e64398b082d92d579df,
+    type: 2}
+  shotforce: 1000
 --- !u!114 &114512025846465078
 MonoBehaviour:
   m_ObjectHideFlags: 1

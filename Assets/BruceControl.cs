@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class BruceControl : MonoBehaviour
+public class BruceControl : NetworkBehaviour
 {
 
 
@@ -13,6 +14,8 @@ public class BruceControl : MonoBehaviour
     public float gravity = 20.0F;
     public float runleft = 0.0f, runright = 1.0f, timeInAir = 0f, deathTimer = 10f;
     private Vector3 moveDirection = Vector3.zero;
+    public GameObject bulletsprefab;
+    public float shotforce = 100000f;
 
 
 
@@ -37,7 +40,7 @@ public class BruceControl : MonoBehaviour
 
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
-
+            CmdFireBullet();
 
             if (Input.GetKeyDown("up") || Input.GetKeyDown("w"))
             {
@@ -121,6 +124,18 @@ public class BruceControl : MonoBehaviour
            
 
 
+        }
+    }
+
+    [Client] private void CmdFireBullet()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            GameObject bullets = Instantiate(bulletsprefab, transform.position, Quaternion.Euler(90, 0, 0));
+            bullets.GetComponent<Rigidbody>().AddForce(transform.forward * shotforce);
+            NetworkServer.SpawnWithClientAuthority(bullets, connectionToClient);
+            Destroy(bullets,.9f);
+          
         }
     }
 }

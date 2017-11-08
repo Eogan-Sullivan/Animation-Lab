@@ -1,6 +1,6 @@
 WindowsStandalone
 f891642c3c113ebf4ff95b6f87e50edd Assembly-CSharp.dll:.CameraController
-e175b890fa0d708b0c069e7522c30ed2 Assembly-CSharp.dll:.BruceControl
+1ab5e3c10ec9517f205cf47ae0b53a81 Assembly-CSharp.dll:.BruceControl
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9f07aaefd0255462bb6e4f9e5da6b2d4 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -172,7 +172,6 @@ b7f557c19cce3b6f593e26edfe1ec859 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 0ad469aca31264c6140b1e503c43ab6b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.PostEffectsBase
-0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-e1ff970319fa33ba4daa3ef83c5282a8 Assembly-CSharp.dll:.demo
-ddffee96f0d6d59066aa9fbc8cd20335 Assembly-CSharp.dll:.smoothFollow
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SetupLocalPlayer
+0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.destroytime
