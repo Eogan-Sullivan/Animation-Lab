@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 114627853866277916}
   - component: {fileID: 114739237012159474}
   - component: {fileID: 114512025846465078}
+  - component: {fileID: 114612206498689824}
   m_Layer: 0
   m_Name: Bruce Prefab
   m_TagString: Bruce
@@ -2494,7 +2495,7 @@ MonoBehaviour:
   runright: 1
   timeInAir: 0
   deathTimer: 10
-  bulletsprefab: {fileID: 1651967342823236, guid: d93405f7b3875e64398b082d92d579df,
+  bulletsprefab: {fileID: 1095083494837396, guid: de3dc6369572aea4aa502b720de3d278,
     type: 2}
   shotforce: 1000
 --- !u!114 &114512025846465078
@@ -2508,6 +2509,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad305df53726a6489ba91ea564122b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114612206498689824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975336044210086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95062790127798712}
+  m_ParameterSendBits: 31
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114627853866277916
 MonoBehaviour:
   m_ObjectHideFlags: 1

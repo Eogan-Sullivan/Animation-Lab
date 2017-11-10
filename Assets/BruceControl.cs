@@ -40,15 +40,19 @@ public class BruceControl : NetworkBehaviour
 
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
-            CmdFireBullet();
+           
 
             if (Input.GetKeyDown("up") || Input.GetKeyDown("w"))
             {
                 anim.SetBool("Running", true);
 
             }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                CmdFireBullet();
+            }
 
-            if (Input.GetKeyUp("up") || Input.GetKeyUp("w"))
+             if (Input.GetKeyUp("up") || Input.GetKeyUp("w"))
             {
                 anim.SetBool("Running", false);
 
@@ -127,16 +131,17 @@ public class BruceControl : NetworkBehaviour
         }
     }
 
-    [Client] private void CmdFireBullet()
+    
+       [Command] private void CmdFireBullet()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
+        
+       
             GameObject bullets = Instantiate(bulletsprefab, transform.position, Quaternion.Euler(90, 0, 0));
             bullets.GetComponent<Rigidbody>().AddForce(transform.forward * shotforce);
-            NetworkServer.SpawnWithClientAuthority(bullets, connectionToClient);
+            NetworkServer.Spawn(bullets);
             Destroy(bullets,.9f);
           
-        }
+       
     }
 }
 
