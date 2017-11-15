@@ -8,7 +8,6 @@ public class BruceControl : NetworkBehaviour
 
 
     Animator anim;
-
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -50,7 +49,21 @@ public class BruceControl : NetworkBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 CmdFireBullet();
+
+
             }
+
+            if(Input.GetKeyUp(KeyCode.S))
+            {
+                anim.SetBool("WalkBackwards",true);
+
+            }
+
+            else
+            {
+                anim.SetBool("WalkBackwards", false);
+            }
+
 
              if (Input.GetKeyUp("up") || Input.GetKeyUp("w"))
             {
@@ -68,7 +81,14 @@ public class BruceControl : NetworkBehaviour
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                anim.SetFloat("Blend", runright);
+                anim.SetFloat("Blend", runright);             
+              
+                
+            }
+
+            if(Input.GetKey(KeyCode.D))
+            {
+                transform.RotateAround(transform.position, Vector3.up, 60 * Time.deltaTime);
             }
 
             else if ((Input.GetKeyUp(KeyCode.D)))
@@ -80,7 +100,13 @@ public class BruceControl : NetworkBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 anim.SetFloat("Blend", runleft);
+               
 
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.RotateAround(transform.position, Vector3.up, -60 * Time.deltaTime);
             }
             else if ((Input.GetKeyUp(KeyCode.A)))
             {
@@ -102,34 +128,13 @@ public class BruceControl : NetworkBehaviour
 
 
         }
-        //rotating here
-        transform.right = Vector3.Slerp(transform.right, Vector3.right * Input.GetAxis("Horizontal"), 0.1f);
-        moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
+
 
 
     }
 
 
-    void DeathCondition()
-    {
-        CharacterController controller = GetComponent<CharacterController>();
-        if (controller.isGrounded)
-        {
-            timeInAir = 0f;
-        }
-        if (!controller.isGrounded)
-        {
-            timeInAir += Time.deltaTime;
 
-        }
-        if (timeInAir >= deathTimer)
-        {
-           
-
-
-        }
-    }
 
     
        [Command] private void CmdFireBullet()
@@ -137,11 +142,14 @@ public class BruceControl : NetworkBehaviour
         
        
             GameObject bullets = Instantiate(bulletsprefab, transform.position, Quaternion.Euler(90, 0, 0));
-            bullets.GetComponent<Rigidbody>().AddForce(transform.forward * shotforce);
+            bullets.GetComponent<Rigidbody>().AddForce(transform.forward * (shotforce*20));
             NetworkServer.Spawn(bullets);
             Destroy(bullets,.9f);
           
        
     }
+    public void FootR() { }
+
+    public void FootL() { }
 }
 
