@@ -161,7 +161,7 @@ public class BruceControl : NetworkBehaviour
     public void FootL() { }
 
 
-    public void OnTriggerEnter(Collider other)
+      void OnCollisionEnter(Collision collision)
     {
         anim.SetBool("isHit", true);
     }
