@@ -11,7 +11,7 @@ public class BruceControl : NetworkBehaviour
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    public float runleft = 0.0f, runright = 1.0f, timeInAir = 0f, deathTimer = 10f;
+    public float runleft = 0.0f, runright = 0.0f, timeInAir = 0f, deathTimer = 10f;
     private Vector3 moveDirection = Vector3.zero;
     public GameObject bulletsprefab;
     public float shotforce = 100000f;
@@ -21,8 +21,6 @@ public class BruceControl : NetworkBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-
-
 
     }
 
@@ -49,19 +47,19 @@ public class BruceControl : NetworkBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 CmdFireBullet();
-
-
             }
 
             if(Input.GetKeyUp(KeyCode.S))
             {
                 anim.SetBool("WalkBackwards",true);
+                anim.SetBool("Idle", false);
 
             }
 
             else
             {
                 anim.SetBool("WalkBackwards", false);
+                anim.SetBool("Idle", true);
             }
 
 
@@ -81,8 +79,16 @@ public class BruceControl : NetworkBehaviour
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                anim.SetFloat("Blend", runright);             
-              
+               
+                    if (runright != 1.0f)
+                    {
+                        runright += 0.2f;
+                        anim.SetFloat("Blend", runright);
+                    }
+
+                    else
+                        anim.SetFloat("Blend", runright);
+                
                 
             }
 
@@ -117,12 +123,14 @@ public class BruceControl : NetworkBehaviour
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 anim.SetBool("Kick", true);
+                anim.SetBool("Idle", false);
 
             }
 
             else if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 anim.SetBool("Kick", false);
+                anim.SetBool("Idle", true);
             }
 
 
@@ -142,7 +150,7 @@ public class BruceControl : NetworkBehaviour
         
        
             GameObject bullets = Instantiate(bulletsprefab, transform.position, Quaternion.Euler(90, 0, 0));
-            bullets.GetComponent<Rigidbody>().AddForce(transform.forward * (shotforce*20));
+            bullets.GetComponent<Rigidbody>().AddForce(transform.forward * shotforce);
             NetworkServer.Spawn(bullets);
             Destroy(bullets,.9f);
           
@@ -151,5 +159,11 @@ public class BruceControl : NetworkBehaviour
     public void FootR() { }
 
     public void FootL() { }
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        anim.SetBool("isHit", true);
+    }
 }
 
