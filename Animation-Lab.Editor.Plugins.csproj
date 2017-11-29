@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5D6E9F4C-B774-B543-3925-AD4F28033127}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass.dll</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -50,83 +50,79 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\UnityAssemblies\UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Timeline.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Timeline">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Timeline.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TreeEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.HoloLens">
-      <HintPath>Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
-      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VR">
-      <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>Library\UnityAssemblies\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Animation-Lab.csproj">
-      <Project>{6DBD546C-0472-A64A-C098-176ACFF0D76A}</Project>
-      <Name>Animation-Lab</Name>
-    </ProjectReference>
     <ProjectReference Include="Animation-Lab.Plugins.csproj">
       <Project>{6875FCEF-D826-5756-0BB9-A1C212DCEFB2}</Project>
       <Name>Animation-Lab.Plugins</Name>
@@ -136,43 +132,6 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Editor Resources\UI\Trackball.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\ACES.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Blit.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Bloom.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Common.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\FXAA.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\GrainGen.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\LutGen.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\TAA.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\TAA.shader" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-    <None Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Resources\Shaders\Uber.shader" />
-    <None Include="Assets\Adam Character Pack\license.txt" />
     <None Include="Assets\AnimationsKickReadMe.txt" />
     <None Include="Assets\BodyGuards\ReadMe.txt.txt" />
     <None Include="Assets\RPG Character Animation Pack\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
